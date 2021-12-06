@@ -8,6 +8,7 @@ with pkgs.python39Packages;
 pkgs.mkShell {
   buildInputs = [
     pandas numpy requests scikit-learn azure-storage-blob jupyter
+    matplotlib seaborn
   ];
   shellHook = ''
     # Set environment variables
