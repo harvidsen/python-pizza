@@ -27,7 +27,7 @@ pakkehåndtering på 3 forskjellige måter.
 python -m pip install pandas numpy requests scikit-learn azure-storage-blob jupyter matplotlib seaborn
 ```
 
-2. [`poetry`](https://python-poetry.org/docs/): En av mange verktøy for *dependency management* i python. Dette lager et nytt virtuelt mijlø for dette prosjektet.
+2. [`poetry`](https://python-poetry.org/docs/): En av mange verktøy for _dependency management_ i python. Dette lager et nytt virtuelt mijlø for dette prosjektet.
 
 ```bash
 poetry install
