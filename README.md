@@ -16,11 +16,29 @@ Notebook. Ein liten guide for oppsett av det finner du
 [her](https://towardsdatascience.com/installing-jupyter) (frå "Installing the
 Jupyter Extension" og nedover).
 
-Til slutt må dere installere kjente Python-biblioteker. Dette vil trolig
-fungere:
+### Python dependencies
 
-1. `python -m pip install poetry`
-1. `python -m poetry install`
+Til slutt må dere installere kjente Python-biblioteker. Her har vi lagt opp til
+pakkehåndtering på 3 forskjellige måter.
+
+1. `pip`: Python sin innebygde pakke manager. Dette innstallerer pakker rett på aktiv python installasjon.
+
+```cmd
+python -m pip install pandas numpy requests scikit-learn azure-storage-blob jupyter matplotlib seaborn
+```
+
+2. [`poetry`](https://python-poetry.org/docs/): En av mange verktøy for *dependency management* i python. Dette lager et nytt virtuelt mijlø for dette prosjektet.
+
+```bash
+poetry install
+poetry shell
+```
+
+3. [`nix`](https://nixos.org/guides/install-nix.html): Et verktøy for fullstendig dependency management på unix lignende systemer. Veldig mektig, men bratt læringskurve.
+
+```bash
+nix-shell
+```
 
 ## Litt ekstra notater
 
